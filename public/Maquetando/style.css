@@ -1,0 +1,16 @@
+body {
+    min-height: 100vh;
+    background: linear-gradient(#fff, #ccc);
+}
+
+
+h1 { 
+    display: flex;
+    justify-content: center;
+    font-family: "Poppins"
+}
+p {
+    text-align: center;
+    font-family: "Poppins";
+}
+

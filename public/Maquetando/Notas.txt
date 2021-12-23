@@ -1,0 +1,33 @@
+Fuentes: tipos, tamaños, weight, (poppins y advent sans)
+Páginas
+ilustraciones
+icon
+hosting  y dominio
+URL = iasdjuliocartagena.com o .online
+header (nav sobre imagen, nav aparte) = menu flotante, cuadro
+Logo: Texto y en resoluciones pequeñas img
+Menu en cel
+Diseño general 
+animaciones
+colores
+
+En la parte de noticias, colocar los últimos proyectos u eventos 
+
+Estructura:
+ 
+ Header { logo, inicio, nosotros(misión, visión), creencias, ministerios(menú desplegable), proyectos(cosas hechas en el pasado), noticias(planes), encuentranos} (ver transparencia del menú)
+ 
+
+
+
+ inicio: banner, texto principal (H1) (ver color del texto).
+ Nosotros: Titulo, imagen al costado (o podría ser: título, imagen, texto), texto al lado derecho.
+ Creencias: Dividir por categorías (falta analizar)
+ proyectos: Poner eventos más recientes (entre ellos podría estar la misión Caleb, el camporí, la entrega de canastas misioneras, la semana de basta de silencio, más amor en navidad)
+ Noticias: Eventos próximos que planea la iglesia
+ Encuentranos: Un footer con contacto, números de encargados, dirección de la igleisa, Mapa, página encuentra una iglesia; (Podría contener tamibién un chat)
+
+
+
+
+

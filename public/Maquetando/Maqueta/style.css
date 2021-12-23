@@ -1,0 +1,126 @@
+@font-face {
+    font-family: Advent-sans;
+    src: url(AdventSansLogo.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "poppins";
+    min-height: 100vh;
+    background-color: #fbf6f0
+}
+
+header {
+    height: 100vh;
+    width: 100%;
+    background: url(images/bg-header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+nav {
+    background: rgba(251,247,241);
+    display: flex;
+    justify-content: space-evenly;
+    position: fixed;
+    width: 100%;
+}
+
+nav .logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    font-family: Advent-sans;
+    transition: color .3s, font-size .3s;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo:hover {
+    color: #555;
+    font-size: 33px;
+}
+
+nav .links a {
+    font-size: 25px; 
+    margin-left: 10px; 
+    align-self: center;
+    text-decoration: none;
+    color: #343;
+    transition: color .2s, border-bottom .1s;
+}
+
+.links a:hover {
+    color: #000;
+    border-bottom: 5px solid #000;
+}
+
+.texto-header {
+    min-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+
+.texto-header h1 {
+    font-size: 80px;
+}
+
+.texto-header h2 {
+    font-size: 60px;
+    color: #eef
+}
+
+.contenedor {
+    margin-top: 200px;
+}
+
+.contenedor h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 85px;
+    margin-bottom: 35px;
+}
+
+.texto-sobre-nosotros img {
+    width: 500px;
+}
+
+.texto-sobre-nosotros {
+    display: flex;
+}
+
+.texto-sobre-nosotros p {
+    align-self: center;
+    font-size: 30px;
+}
+
+.creencias-tabla {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.creencias-tabla img {
+    width: 20%;
+}
+
+.creencias-tabla h3 {
+    font-size: 40px;
+}
+
+.creencias-tabla li {
+    font-size: 30px;
+    margin-left: 40px;
+}
