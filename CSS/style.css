@@ -5,6 +5,7 @@
     padding: 0;
     margin: 0;
     scroll-behavior: smooth;
+    font-family: "poppins", sans-serif;
 }
 
 img {
@@ -13,7 +14,6 @@ img {
 
 .main {
     min-height: 100vh;
-    font-family: "poppins", sans-serif;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -495,7 +495,7 @@ span {
 
     .hamburguer i {
         position: fixed;
-        bottom: 760px;
+        bottom: 650px;
         right: 20px;
         z-index: 10000;
         cursor: pointer;
@@ -513,7 +513,7 @@ span {
         width: 300px;
         height: 100%;
         background: #000;
-        z-index: 10000;
+        z-index: 1000000;
         transition: transform .5s ease;
         transform: translateX(-500px);
     }
@@ -646,3 +646,64 @@ span {
     }
 }
 
+
+/* MINISTERIOS */
+
+/* Slider */
+
+.container-slider {
+    width: 100vw;
+}
+
+.slider, .slide {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.slider {
+    height: 100vh;
+}
+
+.slider .slide {
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: opacity 1s ease;
+    opacity: 0;
+}
+
+.container-slider img {
+    width: 100vw;
+    margin-top: 110px;
+    height: calc(100vh - 150px);
+    object-fit: cover;
+    object-position: center;
+}
+
+.slide:nth-child(1) {
+    opacity: 1;
+}
+
+#slide5 {
+    object-position: left;
+}
+
+#slide6 {
+    object-position: top;
+}
+
+
+.ministries-title {
+    display: flex;
+    width: 100%;
+    height: calc(100vh - 200px);
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 100000;
+    font-size: 80px;
+    color: #ffffff;
+    text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
+    margin-bottom: 150px;
+}
