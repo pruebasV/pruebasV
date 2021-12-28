@@ -1,24 +1,7 @@
-
-// Barra de navegación
-    let mainUbication = window.scrollY; 
-    window.addEventListener("scroll", () => {
-        let currentDisplacement = window.scrollY; 
-        console.log(window.screen.width);
-        if (window.screen.width >= 770) { 
-            if (mainUbication > currentDisplacement) {
-                document.querySelector(".navigation").style.top = "0px";
-                document.querySelector(".sub-menu").style.top = "50px";
-            } else {
-                document.querySelector(".navigation").style.top = "-100px";
-                document.querySelector(".sub-menu").style.top = "-1000px";
-            }
-        }
-        mainUbication = currentDisplacement;
-    })
 // Hamburger menu and his effects 
-
     const hamburguer = document.querySelector(".hamburguer i");
     hamburguer.addEventListener("click", ()=> {
+        hamburguer.classList.add("actived")
         const navigation = document.querySelector(".navigation");
         const slider = document.querySelector(".container-slider");
         const ministries = document.querySelector(".ministries-container");
@@ -61,10 +44,8 @@
     const linksFunctions = (link)=> {
         link.addEventListener("click", ()=> {
             if (window.screen.width <= 770){
-            console.log(link)
             const navigation = document.querySelector(".navigation");
-            navigation.style.transform = "translateX(-500px)";
-           
+            navigation.style.transform = "translateX(-500px)"; 
             navigation.classList.toggle("extend");
             console.clear() 
         }
@@ -78,7 +59,7 @@
     linksFunctions(fifthLink)    
 
 // Scroll Reveal
-if (window.location.pathname == "/index.html") {
+if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
     ScrollReveal().reveal(".container-showcase", {delay: 250});
     ScrollReveal().reveal(".container-nosotros", {delay: 250});
     ScrollReveal().reveal(".transition-one", {delay: 150})
