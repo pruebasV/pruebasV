@@ -3,6 +3,7 @@
     let mainUbication = window.scrollY; 
     window.addEventListener("scroll", () => {
         let currentDisplacement = window.scrollY; 
+        console.log(window.screen.width);
         if (window.screen.width >= 770) { 
             if (mainUbication > currentDisplacement) {
                 document.querySelector(".navigation").style.top = "0px";
@@ -19,11 +20,36 @@
     const hamburguer = document.querySelector(".hamburguer i");
     hamburguer.addEventListener("click", ()=> {
         const navigation = document.querySelector(".navigation");
+        const slider = document.querySelector(".container-slider");
+        const ministries = document.querySelector(".ministries-container");
+        const showcase = document.querySelector(".container-showcase");
+        const contentOfMain = document.querySelector(".main-content");
+        navigation.style.transition = "transform .5s ease"
         navigation.style.transform = "translateX(-500px)";
         navigation.classList.toggle("extend");
         if (navigation.classList[1] === "extend") {
             navigation.style.transform = "translateX(0)";
-        }
+            if (window.location.pathname == "/ministerios.html") {
+                slider.addEventListener("click", ()=> {
+                navigation.style.transform = "translateX(-500px)";
+                navigation.classList.toggle("extend");
+                })
+                ministries.addEventListener("click", ()=> {
+                    navigation.style.transform = "translateX(-500px)";
+                    navigation.classList.toggle("extend");
+                    })
+            }
+            if (window.location.pathname == "/index.html" || window.location.pathname == "/") {
+                showcase.addEventListener("click", ()=> {
+                    navigation.style.transform = "translateX(-500px)";
+                    navigation.classList.toggle("extend");
+                    })
+                contentOfMain.addEventListener("click", ()=> {
+                    navigation.style.transform = "translateX(-500px)";
+                    navigation.classList.toggle("extend");
+                    })
+            }
+        }     
     });
 
     const firstLink = document.querySelector(".uno");
@@ -52,15 +78,18 @@
     linksFunctions(fifthLink)    
 
 // Scroll Reveal
-    ScrollReveal().reveal("header", {delay: 250});
+if (window.location.pathname == "/index.html") {
+    ScrollReveal().reveal(".container-showcase", {delay: 250});
     ScrollReveal().reveal(".container-nosotros", {delay: 250});
     ScrollReveal().reveal(".transition-one", {delay: 150})
     ScrollReveal().reveal(".creencias", {delay: 350})
     ScrollReveal().reveal(".transition-two", {delay: 250})
     ScrollReveal().reveal(".actividades", {delay: 250})
     ScrollReveal().reveal(".contactos", {delay: 250})
-    ScrollReveal().reveal(".navigation", {delay: 250})
-    ScrollReveal().reveal(".slider", {delay: 250})
+}
+    ScrollReveal().reveal(".container-slider", {delay: 250})
+    ScrollReveal().reveal(".ministries-title", {delay: 251})
+
 
 // Slider
 if (window.location.pathname == "/ministerios.html") {

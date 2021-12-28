@@ -514,7 +514,6 @@ span {
         height: 100%;
         background: #000;
         z-index: 1000000;
-        transition: transform .5s ease;
         transform: translateX(-500px);
     }
 
@@ -661,10 +660,6 @@ span {
     list-style: none;
 }
 
-.slider {
-    height: 100vh;
-}
-
 .slider .slide {
     position: absolute;
     left: 0;
@@ -695,15 +690,165 @@ span {
 
 
 .ministries-title {
+    position: relative;
+    z-index: 10;
     display: flex;
     width: 100%;
-    height: calc(100vh - 200px);
     justify-content: center;
     align-items: center;
-    position: absolute;
-    z-index: 100000;
     font-size: 80px;
     color: #ffffff;
     text-shadow: 6px 6px 0px rgba(0,0,0,0.2);
-    margin-bottom: 150px;
+    margin-top: 200px;
+}
+
+.ministries-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-of-ministries-title {
+    align-self: center;
+    margin-top: 400px;
+    font-size: 50px;
+}
+
+.ministry {
+    margin: 20px;
+
+}
+
+.ministry h3 {
+    font-size: 30px;
+}
+
+.ministry p {
+    font-size: 18px;
+}
+
+.collage-container {
+    position: relative;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+
+}
+
+.collage-container .clip {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: clip-path .5s ease;
+    border-radius: 10px;
+    background-position: center;
+}
+
+.collage-container .clip.clip1 {
+    background: url("../IMAGES/ministries/ministerio-joven.jpg");
+    background-size: cover;
+    clip-path: polygon(0 0, 55% 0, 20% 100%, 0% 100%);
+}
+
+.collage-container .clip.clip2 {
+    background: url("../IMAGES/ministries/club-de-conquistadores.png");
+    background-size: cover;
+    clip-path: polygon(55% 0, 100% 0, 45% 100%, 20% 100%);
+}
+
+.collage-container .clip.clip3 {
+    background: url("../IMAGES/ministries/Club-uziel-completo.jpg");
+    background-size: cover;
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 45% 100%);
+}
+
+.collage-container:hover > .clip{
+    clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%);
+}
+
+.collage-container .clip:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    background-color: #ffffff;
+    clip-path: polygon(0 0, 0 0, 0 100%, 0 100%);
+    transition: clip-path .5s ease;
+}
+
+.collage-container .clip:hover > .content {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+
+.leader-photo {
+    position: relative;
+    max-width: 800px;
+    height: 500px;
+    margin: auto;
+    margin-top: 50px;
+    background: url("../IMAGES/ministries/lideres-jovenes.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+
+.leader-photo:hover > .content {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.woman-ministry-description {
+    line-height: 1.7;
+}
+
+.home-familyM-leader-photo {
+    background: url("../IMAGES/ministries/home&family-ministry.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    max-width: 700px;
+    height: 700px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.home-familyM-leader-photo:hover > .content {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+@media screen and (max-width: 528px) {
+    .ministries-title {
+        font-size: 60px;
+    }
+
+    .list-of-ministries-title {
+        font-size: 40px;
+    }
+
+    .content h3{
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 380px)  {
+    .ministries-title {
+        font-size: 50px;
+    }
+
+    .list-of-ministries-title {
+        font-size: 30px;
+
+    }
+
+    .collage-container .clip .content h3  {
+        font-size: 20px;
+    }
 }
