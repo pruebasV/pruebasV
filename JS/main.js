@@ -12,7 +12,7 @@
         navigation.classList.toggle("extend");
         if (navigation.classList[1] === "extend") {
             navigation.style.transform = "translateX(0)";
-            if (window.location.pathname == "/pruebasVministerios.html" || window.location.pathname == "/ministerios.html") {
+            if (window.location.pathname == "/pruebasV/ministerios.html/" || window.location.pathname == "/ministerios.html/") {
                 slider.addEventListener("click", ()=> {
                 navigation.style.transform = "translateX(-500px)";
                 navigation.classList.toggle("extend");
@@ -22,7 +22,7 @@
                     navigation.classList.toggle("extend");
                     })
             }
-            if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/pruebasV") {
+            if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/pruebasV/") {
                 showcase.addEventListener("click", ()=> {
                     navigation.style.transform = "translateX(-500px)";
                     navigation.classList.toggle("extend");
@@ -59,7 +59,7 @@
     linksFunctions(fifthLink)    
 
 // Scroll Reveal
-if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/pruebasV") {
+if (window.location.pathname == "/index.html/" || window.location.pathname == "/" || window.location.pathname == "/pruebasV/") {
     ScrollReveal().reveal(".container-showcase", {delay: 250});
     ScrollReveal().reveal(".container-nosotros", {delay: 250});
     ScrollReveal().reveal(".transition-one", {delay: 150})
@@ -73,7 +73,6 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
     ScrollReveal().reveal(".ministries-container", {delay: 250})
 }
  
-
 
 
 // Slider
