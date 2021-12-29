@@ -73,7 +73,7 @@ if (window.location.pathname == "/index.html" || window.location.pathname == "/"
 
 
 // Slider
-if (window.location.pathname == "/ministerios.html") {
+if (window.location.pathname == "/pruebasV/ministerios.html") {
     const slide1 = document.getElementById("slide1");
     const slide2 = document.getElementById("slide2");
     const slide3 = document.getElementById("slide3");
