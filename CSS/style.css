@@ -530,7 +530,7 @@ span {
         top: 0;
         left: 0;
         width: 300px;
-        height: 100%;
+        min-height: 100vh;
         background: #000;
         z-index: 1000000;
         transform: translateX(-500px);
