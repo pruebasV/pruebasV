@@ -12,7 +12,7 @@
         navigation.classList.toggle("extend");
         if (navigation.classList[1] === "extend") {
             navigation.style.transform = "translateX(0)";
-            if (window.location.pathname == "/ministerios.html") {
+            if (window.location.pathname == "/pruebasV/ministerios.html" || window.location.pathname == "/ministerios.html") {
                 slider.addEventListener("click", ()=> {
                 navigation.style.transform = "translateX(-500px)";
                 navigation.classList.toggle("extend");
