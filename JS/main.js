@@ -40,6 +40,8 @@
     const thirthLink = document.querySelector(".tres");
     const fourthLink = document.querySelector(".cuatro");
     const fifthLink = document.querySelector(".cinco");
+    const sixtLink = document.querySelector(".seis");
+
 
     const linksFunctions = (link)=> {
         link.addEventListener("click", ()=> {
@@ -57,6 +59,7 @@
     linksFunctions(thirthLink) 
     linksFunctions(fourthLink)    
     linksFunctions(fifthLink)    
+    linksFunctions(sixtLink)    
 
 // Scroll Reveal
 if (window.location.pathname == "/index.html" || window.location.pathname == "/" || window.location.pathname == "/pruebasV") {

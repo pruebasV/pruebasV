@@ -375,6 +375,7 @@ header:before {
     flex-direction: column;
     align-items: center;
     margin-bottom: 200px;
+    width: 100vw;
 }
 
 .grupos-pequeños h2 {
@@ -391,6 +392,7 @@ header:before {
 
 .grupos-pequeños-imgs {
     padding: 30px;
+    width: 100%;   
 }
 
 .grupo {
@@ -398,14 +400,41 @@ header:before {
     display: flex;
     align-items: center;
     flex-direction: column;
+}
+
+.foto-grupo {
+    max-width: 800px;
+    height: 600px;
+    border-radius: 10px;
+    margin: auto;
     margin-bottom: 50px;
 }
 
-.grupos-pequeños-imgs img {
-    width: 800px;
-    border-radius: 20px;
-    
+.foto-rehuel {
+    background: url("../IMAGES/grupo-rehuel.jpg");
+    background-position: center;
+    background-size: cover;
 }
+
+.foto-benjamin {
+    background: url("../IMAGES/grupo-benjamin.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foto-betel {
+    background: url("../IMAGES/grupo-betel.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.foto-emanuel {
+    background: url("../IMAGES/grupo-emanuel.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+
 
 
 /* Footer */
@@ -632,7 +661,7 @@ span {
         margin-left: 15px;
     }
 
-    .grupos-pequeños h2 {
+    .fs-pequeños h2 {
         font-size: 40px;
     }
 
