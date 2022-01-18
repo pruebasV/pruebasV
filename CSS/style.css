@@ -368,6 +368,44 @@ header:before {
 .actividad:hover p{
     opacity: 1;
 }
+/* GP */
+
+.grupos-pequeños {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 200px;
+}
+
+.grupos-pequeños h2 {
+    font-size: 50px;
+    line-height: 1;
+    border-bottom: 5px solid #000000;
+    margin-bottom: 70px;
+}
+
+.grupos-pequeños-descripción {
+    font-size: 20px;
+}
+
+.grupos-pequeños-imgs {
+    padding: 30px;
+}
+
+.grupo {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 50px;
+}
+
+.grupos-pequeños-imgs img {
+    width: 800px;
+    border-radius: 20px;
+    
+}
+
 
 /* Footer */
 
@@ -531,7 +569,7 @@ span {
         left: 0;
         width: 300px;
         min-height: 100vh;
-        background: #000;
+        background: #000000;
         z-index: 1000000;
         transform: translateX(-500px);
     }
@@ -844,6 +882,23 @@ span {
     line-height: 1.7;
 }
 
+.womanM-leader-photo {
+    position: relative;
+    max-width: 800px;
+    height: 800px;
+    margin: auto;
+    margin-top: 50px;
+    background: url("../IMAGES/ministries/lider-ministerio-mujer.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+}
+
+.womanM-leader-photo:hover > .content {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
 .minorM-leader-photo {
     position: relative;
     max-width: 800px;
@@ -872,6 +927,21 @@ span {
 }
 
 .home-familyM-leader-photo:hover > .content {
+    clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
+}
+
+.singingM-leader-photo {
+    background: url("../IMAGES/ministries/lider-ministerio-canto.jpg");
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    max-width: 700px;
+    height: 700px;
+    margin: 20px auto;
+    border-radius: 10px;
+}
+
+.singingM-leader-photo:hover > .content {
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
 
